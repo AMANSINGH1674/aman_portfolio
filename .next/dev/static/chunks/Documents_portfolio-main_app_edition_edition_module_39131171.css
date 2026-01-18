@@ -1,0 +1,373 @@
+/* [project]/Documents/portfolio-main/app/edition/edition.module.css [app-client] (css) */
+.edition-module__KcJA7W__pageContainer {
+  background: #2a2a2a;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: auto hidden;
+}
+
+.edition-module__KcJA7W__container {
+  width: max-content;
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.edition-module__KcJA7W__folder {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  flex-shrink: 0;
+  width: 280px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden auto;
+}
+
+.edition-module__KcJA7W__folder::-webkit-scrollbar {
+  display: none;
+}
+
+.edition-module__KcJA7W__folder1 {
+  background: #d4c4a8;
+  padding: 40px 30px;
+}
+
+.edition-module__KcJA7W__folder1 .edition-module__KcJA7W__title {
+  writing-mode: vertical-rl;
+  color: #4a4a3a;
+  letter-spacing: -2px;
+  font-size: 72px;
+  font-weight: 900;
+  position: absolute;
+  top: 40px;
+  left: -20px;
+  transform: rotate(180deg);
+}
+
+.edition-module__KcJA7W__folder1 .edition-module__KcJA7W__content {
+  margin-top: 100px;
+  margin-left: 60px;
+}
+
+.edition-module__KcJA7W__folder1 .edition-module__KcJA7W__label {
+  color: #4a4a3a;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.edition-module__KcJA7W__folder1 .edition-module__KcJA7W__box {
+  background-color: #5a5a4a;
+  background-image: url("/images/LS1-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.edition-module__KcJA7W__folder1 .edition-module__KcJA7W__barcode {
+  background: linear-gradient(90deg, #000 0% 10%, #0000 10% 20%, #000 20% 25%, #0000 25% 35%, #000 35% 40%, #0000 40% 50%, #000 50% 55%, #0000 55% 60%, #000 60% 70%, #0000 70% 80%, #000 80% 90%, #0000 90%);
+  width: 60px;
+  height: 30px;
+  margin: 20px 0;
+}
+
+.edition-module__KcJA7W__folder1 .edition-module__KcJA7W__textBlock {
+  color: #4a4a3a;
+  margin-top: 20px;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.edition-module__KcJA7W__folder1 .edition-module__KcJA7W__imagePlaceholder {
+  background-image: url("/images/a2f80558-0d16-4be3-8a40-65161bcdac5f-md.jpeg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  margin: 15px 0;
+}
+
+.edition-module__KcJA7W__roundedFrame {
+  border: 3px solid #4a4a3a;
+  border-radius: 0 0 50px 50px;
+  margin: 20px 0;
+  padding: 30px 20px;
+}
+
+.edition-module__KcJA7W__diagonalStripe {
+  background: #2a2a2a;
+  width: 100%;
+  height: 60px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.edition-module__KcJA7W__diagonalStripe:before {
+  content: "ALBUM · SINGLE · TOUR";
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)rotate(-15deg);
+}
+
+.edition-module__KcJA7W__plusPattern {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+  display: grid;
+}
+
+.edition-module__KcJA7W__plusIcon {
+  aspect-ratio: 1;
+  width: 100%;
+  position: relative;
+}
+
+.edition-module__KcJA7W__plusIcon:before, .edition-module__KcJA7W__plusIcon:after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.edition-module__KcJA7W__plusIcon:before {
+  width: 60%;
+  height: 3px;
+}
+
+.edition-module__KcJA7W__plusIcon:after {
+  width: 3px;
+  height: 60%;
+}
+
+.edition-module__KcJA7W__circleDots {
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  display: flex;
+}
+
+.edition-module__KcJA7W__dot {
+  background: #4a4a3a;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.edition-module__KcJA7W__techLabel {
+  color: #fff;
+  letter-spacing: 1px;
+  background: #2a2a2a;
+  margin: 10px 0;
+  padding: 8px 15px;
+  font-size: 9px;
+  display: inline-block;
+}
+
+.edition-module__KcJA7W__fileTab {
+  color: #2a2a2a;
+  background: #c4b49a;
+  border-radius: 8px 8px 0 0;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  margin: 20px 0;
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+}
+
+.edition-module__KcJA7W__encryptedLabel {
+  text-align: center;
+  background: #ffffff1a;
+  border: 2px solid #2a2a2a;
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 8px;
+}
+
+.edition-module__KcJA7W__gridPattern {
+  background-image: linear-gradient(0deg, #0000 49%, #0000004d 49% 51%, #0000 51%), linear-gradient(90deg, #0000 49%, #0000004d 49% 51%, #0000 51%);
+  background-size: 20px 20px;
+  width: 100%;
+  height: 100px;
+  margin: 20px 0;
+}
+
+.edition-module__KcJA7W__arrowRight {
+  border-top: 15px solid #0000;
+  border-bottom: 15px solid #0000;
+  border-left: 25px solid #4a4a3a;
+  width: 0;
+  height: 0;
+  margin: 20px 0;
+}
+
+.edition-module__KcJA7W__codeBlock {
+  color: #fff;
+  background: #0000004d;
+  margin: 15px 0;
+  padding: 15px;
+  font-family: Courier New, monospace;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.edition-module__KcJA7W__hexagon {
+  background: #4a4a3a;
+  width: 60px;
+  height: 34.64px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.edition-module__KcJA7W__hexagon:before, .edition-module__KcJA7W__hexagon:after {
+  content: "";
+  border-left: 30px solid #0000;
+  border-right: 30px solid #0000;
+  width: 0;
+  position: absolute;
+  left: 0;
+}
+
+.edition-module__KcJA7W__hexagon:before {
+  border-bottom: 17.32px solid #4a4a3a;
+  bottom: 100%;
+}
+
+.edition-module__KcJA7W__hexagon:after {
+  border-top: 17.32px solid #4a4a3a;
+  top: 100%;
+}
+
+.edition-module__KcJA7W__progressBar {
+  background: #fff3;
+  width: 100%;
+  height: 4px;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.edition-module__KcJA7W__progressBar:after {
+  content: "";
+  background: #7a8a3a;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.edition-module__KcJA7W__folder2 {
+  background: #b4c4d4;
+  padding: 30px 25px;
+}
+
+.edition-module__KcJA7W__folder3 {
+  background: #5a6a7a;
+  padding: 30px 25px;
+}
+
+.edition-module__KcJA7W__folder4 {
+  background: #a88a5a;
+  padding: 30px 25px;
+}
+
+.edition-module__KcJA7W__folder5 {
+  background: #1a1a1a;
+  padding: 30px 25px;
+}
+
+.edition-module__KcJA7W__folder6 {
+  background: #2a3a2a;
+  padding: 30px 25px;
+}
+
+.edition-module__KcJA7W__folder2 .edition-module__KcJA7W__header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.edition-module__KcJA7W__folder2 .edition-module__KcJA7W__time {
+  color: #2a2a2a;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.edition-module__KcJA7W__folder2 .edition-module__KcJA7W__logLabel {
+  color: #2a2a2a;
+  border: 2px solid #2a2a2a;
+  padding: 5px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.edition-module__KcJA7W__imageBox img, .edition-module__KcJA7W__imageDark img, .edition-module__KcJA7W__contentBox img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.edition-module__KcJA7W__folder4 .edition-module__KcJA7W__imageTall {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.edition-module__KcJA7W__folder4 .edition-module__KcJA7W__imageTall img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.edition-module__KcJA7W__folder5 .edition-module__KcJA7W__iconBox {
+  background: #2a2a2a;
+  width: 100%;
+  height: 200px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.edition-module__KcJA7W__folder5 .edition-module__KcJA7W__iconBox video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.edition-module__KcJA7W__folder6 .edition-module__KcJA7W__circuit {
+  background: #7a8a3a;
+  width: 3px;
+  height: 300px;
+  position: absolute;
+  top: 40%;
+  right: 20px;
+}
+
+.edition-module__KcJA7W__imageBox {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.edition-module__KcJA7W__folderContent {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+}
+
+/*# sourceMappingURL=Documents_portfolio-main_app_edition_edition_module_39131171.css.map*/

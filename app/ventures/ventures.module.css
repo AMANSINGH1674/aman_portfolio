@@ -1,0 +1,287 @@
+.badgeTopLeft {
+    top: 10%;
+    left: 4%;
+    width: 300px;
+    height: 150px;
+    opacity: 0.55;
+    mix-blend-mode: difference;
+    position: absolute;
+    z-index: 9999;
+}
+
+.badgeTopLeft svg {
+    width: 100%;
+    height: 100%;
+    stroke: white;
+    stroke-width: 2;
+    fill: none;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.pageContainer {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #000;
+    overflow-x: hidden;
+    height: 200vh;
+    position: relative;
+    width: 100vw;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* Sticky container to allow scroll effects within view */
+    position: sticky;
+    top: 0;
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    will-change: transform;
+}
+
+.topNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+
+.navLeft,
+.navRight {
+    display: flex;
+    gap: 30px;
+    letter-spacing: 1px;
+}
+
+.sideLabel {
+    position: absolute;
+    writing-mode: vertical-rl;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+}
+
+.labelLeft {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.labelRight {
+    right: 20px;
+    bottom: 15%;
+}
+
+.mainTitle {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: clamp(70px, 12vw, 160px);
+    font-weight: 900;
+    color: #fff;
+    mix-blend-mode: difference;
+    filter: invert(1);
+    z-index: 5;
+}
+
+.asterisk {
+    position: absolute;
+    top: 48%;
+    right: 15%;
+    font-size: clamp(50px, 8vw, 120px);
+    color: rgba(255, 255, 255, 0.3);
+    z-index: 6;
+}
+
+.bigCenterText {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 175px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #fff;
+    mix-blend-mode: difference;
+    z-index: 999;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.glassPanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 7;
+    will-change: transform;
+}
+
+.borderLine {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.lineTop {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+}
+
+.lineBottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+}
+
+.lineLeft {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 1px;
+}
+
+.productGallery {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 9;
+}
+
+.productItem {
+    width: 80px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+}
+
+.productItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentSection {
+    position: absolute;
+    bottom: 25%;
+    right: 8%;
+    width: 35%;
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 9;
+}
+
+.brandTagline {
+    position: absolute;
+    bottom: 22%;
+    right: 8%;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    z-index: 9;
+}
+
+.bottomInfo {
+    position: absolute;
+    bottom: 20px;
+    right: 8%;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 9;
+    text-align: right;
+}
+
+.vectorAcw {
+    position: absolute;
+    stroke: #fff;
+    z-index: 20;
+    opacity: 0.45;
+    mix-blend-mode: difference;
+}
+
+.cornerTopLeft {
+    top: 15%;
+    left: 5%;
+    width: 45px;
+    height: 45px;
+}
+
+.cornerBottomRight {
+    bottom: 12%;
+    right: 10%;
+    width: 45px;
+    height: 45px;
+}
+
+.ticksMid {
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 20px;
+}
+
+.smallCross {
+    top: 32%;
+    right: 30%;
+    width: 22px;
+    height: 22px;
+}
+
+.scanlines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(transparent 0px, transparent 2px, rgba(255, 255, 255, 0.03) 3px);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 999;
+}
+
+.axis {
+    position: absolute;
+    top: 45%;
+    right: 22%;
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+    opacity: 0.6;
+    mix-blend-mode: difference;
+    transform-origin: center;
+    will-change: transform;
+}
+
+.axis svg line {
+    stroke: white;
+    stroke-width: 2;
+}

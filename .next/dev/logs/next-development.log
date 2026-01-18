@@ -1,0 +1,25 @@
+[00:00:00.920] Server  LOG     ✓ Ready in 581ms
+[00:00:02.088] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.532] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:25.017] Server  LOG     ✓ Compiled in 18ms
+[00:01:30.747] Server  LOG     ✓ Compiled in 24ms
+[00:02:05.922] Server  LOG     ✓ Compiled in 11ms
+[00:02:05.991] Server  LOG     ✓ Compiled in 64ms
+[00:03:34.400] Server  LOG     ✓ Compiled in 8ms
+[00:03:42.227] Server  LOG     ✓ Compiled in 4ms
+[00:05:57.310] Server  LOG     ✓ Compiled in 10ms
+[00:07:18.604] Server  LOG     ✓ Compiled in 8ms
+[00:08:14.406] Server  LOG     ✓ Compiled in 28ms
+[00:10:40.202] Server  LOG     ✓ Compiled in 6ms
+[00:12:46.735] Server  LOG     ✓ Compiled in 15ms
+[00:12:51.447] Server  LOG     ✓ Compiled in 16ms
+[00:13:09.732] Server  LOG     ✓ Compiled in 17ms
+[00:13:34.876] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:36.111] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:15.759] Server  LOG     ✓ Compiled in 66ms
+[00:31:15.859] Browser ERROR   A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
+[00:31:16.293] Browser ERROR   A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
+[00:33:36.279] Server  LOG     ✓ Compiled in 28ms
+[00:33:36.334] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
+[00:33:37.292] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
+[00:34:17.222] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

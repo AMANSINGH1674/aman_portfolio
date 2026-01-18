@@ -1,0 +1,288 @@
+/* [project]/Documents/portfolio-main/app/ventures/ventures.module.css [app-client] (css) */
+.ventures-module__96C-bG__badgeTopLeft {
+  opacity: .55;
+  mix-blend-mode: difference;
+  z-index: 9999;
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  top: 10%;
+  left: 4%;
+}
+
+.ventures-module__96C-bG__badgeTopLeft svg {
+  stroke: #fff;
+  stroke-width: 2px;
+  fill: none;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+.ventures-module__96C-bG__pageContainer {
+  background: #000;
+  width: 100vw;
+  height: 200vh;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.ventures-module__96C-bG__container {
+  width: 100vw;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.ventures-module__96C-bG__backgroundImage {
+  object-fit: cover;
+  z-index: 1;
+  will-change: transform;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ventures-module__96C-bG__topNav {
+  color: #fffc;
+  z-index: 10;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-size: 11px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.ventures-module__96C-bG__navLeft, .ventures-module__96C-bG__navRight {
+  letter-spacing: 1px;
+  gap: 30px;
+  display: flex;
+}
+
+.ventures-module__96C-bG__sideLabel {
+  writing-mode: vertical-rl;
+  letter-spacing: 2px;
+  color: #ffffff80;
+  z-index: 10;
+  font-size: 10px;
+  position: absolute;
+}
+
+.ventures-module__96C-bG__labelLeft {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%)rotate(180deg);
+}
+
+.ventures-module__96C-bG__labelRight {
+  bottom: 15%;
+  right: 20px;
+}
+
+.ventures-module__96C-bG__mainTitle {
+  color: #fff;
+  mix-blend-mode: difference;
+  filter: invert();
+  z-index: 5;
+  font-size: clamp(70px, 12vw, 160px);
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.ventures-module__96C-bG__asterisk {
+  color: #ffffff4d;
+  z-index: 6;
+  font-size: clamp(50px, 8vw, 120px);
+  position: absolute;
+  top: 48%;
+  right: 15%;
+}
+
+.ventures-module__96C-bG__bigCenterText {
+  letter-spacing: -1px;
+  color: #fff;
+  mix-blend-mode: difference;
+  z-index: 999;
+  white-space: nowrap;
+  pointer-events: none;
+  font-size: 175px;
+  font-weight: 900;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ventures-module__96C-bG__glassPanel {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  z-index: 7;
+  will-change: transform;
+  background: #ffffff08;
+  border-left: 1px solid #ffffff1a;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ventures-module__96C-bG__borderLine {
+  background: #ffffff40;
+  position: absolute;
+}
+
+.ventures-module__96C-bG__lineTop {
+  height: 1px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.ventures-module__96C-bG__lineBottom {
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.ventures-module__96C-bG__lineLeft {
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.ventures-module__96C-bG__productGallery {
+  z-index: 9;
+  gap: 15px;
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ventures-module__96C-bG__productItem {
+  background: #ffffffe6;
+  border-radius: 4px;
+  width: 80px;
+  height: 100px;
+  display: flex;
+  overflow: hidden;
+}
+
+.ventures-module__96C-bG__productItem img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.ventures-module__96C-bG__contentSection {
+  color: #ffffffb3;
+  z-index: 9;
+  width: 35%;
+  position: absolute;
+  bottom: 25%;
+  right: 8%;
+}
+
+.ventures-module__96C-bG__brandTagline {
+  letter-spacing: 1px;
+  color: #fff9;
+  z-index: 9;
+  font-size: 10px;
+  position: absolute;
+  bottom: 22%;
+  right: 8%;
+}
+
+.ventures-module__96C-bG__bottomInfo {
+  letter-spacing: 1px;
+  color: #ffffff80;
+  z-index: 9;
+  text-align: right;
+  font-size: 9px;
+  position: absolute;
+  bottom: 20px;
+  right: 8%;
+}
+
+.ventures-module__96C-bG__vectorAcw {
+  stroke: #fff;
+  z-index: 20;
+  opacity: .45;
+  mix-blend-mode: difference;
+  position: absolute;
+}
+
+.ventures-module__96C-bG__cornerTopLeft {
+  width: 45px;
+  height: 45px;
+  top: 15%;
+  left: 5%;
+}
+
+.ventures-module__96C-bG__cornerBottomRight {
+  width: 45px;
+  height: 45px;
+  bottom: 12%;
+  right: 10%;
+}
+
+.ventures-module__96C-bG__ticksMid {
+  width: 140px;
+  height: 20px;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ventures-module__96C-bG__smallCross {
+  width: 22px;
+  height: 22px;
+  top: 32%;
+  right: 30%;
+}
+
+.ventures-module__96C-bG__scanlines {
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 999;
+  background: repeating-linear-gradient(#0000 0 2px, #ffffff08 3px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ventures-module__96C-bG__axis {
+  z-index: 999;
+  opacity: .6;
+  mix-blend-mode: difference;
+  transform-origin: center;
+  will-change: transform;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 45%;
+  right: 22%;
+}
+
+.ventures-module__96C-bG__axis svg line {
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+/*# sourceMappingURL=Documents_portfolio-main_app_ventures_ventures_module_636431d3.css.map*/

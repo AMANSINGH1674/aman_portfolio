@@ -1,0 +1,237 @@
+.heroSection {
+    min-height: 100vh;
+    background: #1a1a1a;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    position: relative;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+.navIcons {
+    display: flex;
+    gap: 2rem;
+}
+
+.navIcons button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.contentWrapper {
+    position: relative;
+    height: calc(100vh - 120px);
+    padding: 0;
+    margin: 0;
+}
+
+.statuesTitle {
+    font-size: clamp(8rem, 18vw, 15rem);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 0.85;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.sideText {
+    position: absolute;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 240px;
+    z-index: 2;
+}
+
+.sideTextLeft {
+    left: 3rem;
+    top: 38%;
+}
+
+.sideTextRight {
+    right: 3rem;
+    top: 38%;
+    text-align: right;
+}
+
+.statueCard {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 550px;
+    z-index: 10;
+}
+
+.statueImageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(60, 60, 60, 0.3), rgba(40, 40, 40, 0.3));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.statueImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+}
+
+.glassOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.productInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.productName {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.productPrice {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.addToCart {
+    width: 100%;
+    padding: 1rem;
+    background: white;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background 0.3s;
+}
+
+.addToCart:hover {
+    background: #f0f0f0;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.pageNumber {
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+
+.progressBar {
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progressFill {
+    width: 30%;
+    height: 100%;
+    background: white;
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 2rem;
+    opacity: 0.4;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.aboutSection {
+    background: white;
+    color: #1a1a1a;
+    padding: 5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.aboutTitle {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.aboutText {
+    font-size: 1.2rem;
+    max-width: 500px;
+}
+
+@media (max-width: 768px) {
+    .statuesTitle {
+        font-size: 4rem;
+    }
+
+    .statueCard {
+        width: 90%;
+        height: 500px;
+    }
+
+    .sideText {
+        display: none;
+    }
+}
