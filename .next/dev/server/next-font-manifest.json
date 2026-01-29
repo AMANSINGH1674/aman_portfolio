@@ -1,6 +1,12 @@
 {
-  "app": {},
-  "appUsingSizeAdjust": false,
+  "app": {
+    "[project]/Documents/AMAN_PORTFOLIO/app/contact/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "static/media/5e4d537aaa9e154b-s.p.01f07175.woff2",
+      "static/media/70e3db2de7f94926-s.p.347f98aa.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
   "pages": {},
   "pagesUsingSizeAdjust": false
 }

@@ -1,0 +1,286 @@
+.pageContainer {
+    min-height: 100vh;
+    background-color: #03040a;
+    color: #e0e0e0;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    padding: 6rem 2rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Floating Ambient Glows */
+.pageContainer::before,
+.pageContainer::after {
+    content: '';
+    position: fixed;
+    width: 60vw;
+    height: 60vw;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.15;
+}
+
+.pageContainer::before {
+    top: -20%;
+    left: -10%;
+    background: radial-gradient(circle, #4facfe 0%, transparent 70%);
+}
+
+.pageContainer::after {
+    bottom: -20%;
+    right: -10%;
+    background: radial-gradient(circle, #00f2fe 0%, transparent 70%);
+}
+
+.backButton {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    z-index: 100;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backButton:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    letter-spacing: 4px;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto 6rem;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.title {
+    font-size: clamp(3rem, 10vw, 7rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+    background: linear-gradient(to bottom, #fff 30%, rgba(255, 255, 255, 0.2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.certCard {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2.5rem;
+    border-radius: 24px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+.certCard:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.certInfo {
+    margin-bottom: 1.5rem;
+}
+
+.certType {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: #4facfe;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.certTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.certFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.viewText {
+    font-size: 0.8rem;
+    color: #8892b0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
+}
+
+.certCard:hover .viewText {
+    color: #fff;
+}
+
+/* Modal Styles */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+}
+
+.modalContent {
+    background: #080808;
+    width: 100%;
+    max-width: 1100px;
+    height: 90vh;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+.closeButton {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.closeButton:hover {
+    opacity: 1;
+}
+
+.modalHeader {
+    padding: 2rem 3rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalTitleArea {
+    flex: 1;
+}
+
+.modalType {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: #4facfe;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.modalTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.externalLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    transition: all 0.3s;
+    margin-right: 4rem;
+}
+
+.externalLink:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.iframeContainer {
+    flex: 1;
+    width: 100%;
+    background: #000;
+}
+
+.pdfViewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .pageContainer {
+        padding: 4rem 1.25rem;
+    }
+    .backButton {
+        top: 1rem;
+        left: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .title { 
+        font-size: clamp(2.5rem, 8vw, 3.5rem); 
+        margin-top: 2rem;
+    }
+    .grid { grid-template-columns: 1fr; }
+    .modalOverlay { padding: 0.5rem; }
+    .modalContent { height: 90vh; border-radius: 20px; }
+    .modalHeader { padding: 1.25rem; }
+    .modalTitle { font-size: 1.1rem; }
+    .externalLink { display: none; }
+    .closeButton { top: 0.5rem; right: 1rem; }
+}

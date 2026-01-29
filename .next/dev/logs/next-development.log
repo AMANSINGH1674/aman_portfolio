@@ -1,25 +1,199 @@
-[00:00:00.920] Server  LOG     ✓ Ready in 581ms
-[00:00:02.088] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:02.532] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:25.017] Server  LOG     ✓ Compiled in 18ms
-[00:01:30.747] Server  LOG     ✓ Compiled in 24ms
-[00:02:05.922] Server  LOG     ✓ Compiled in 11ms
-[00:02:05.991] Server  LOG     ✓ Compiled in 64ms
-[00:03:34.400] Server  LOG     ✓ Compiled in 8ms
-[00:03:42.227] Server  LOG     ✓ Compiled in 4ms
-[00:05:57.310] Server  LOG     ✓ Compiled in 10ms
-[00:07:18.604] Server  LOG     ✓ Compiled in 8ms
-[00:08:14.406] Server  LOG     ✓ Compiled in 28ms
-[00:10:40.202] Server  LOG     ✓ Compiled in 6ms
-[00:12:46.735] Server  LOG     ✓ Compiled in 15ms
-[00:12:51.447] Server  LOG     ✓ Compiled in 16ms
-[00:13:09.732] Server  LOG     ✓ Compiled in 17ms
-[00:13:34.876] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:36.111] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:31:15.759] Server  LOG     ✓ Compiled in 66ms
-[00:31:15.859] Browser ERROR   A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:31:16.293] Browser ERROR   A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:33:36.279] Server  LOG     ✓ Compiled in 28ms
-[00:33:36.334] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:33:37.292] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:34:17.222] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.818] Server  LOG     ✓ Ready in 607ms
+[00:00:01.337] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.439] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:33.008] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:44.744] Browser ERROR   ./Documents/AMAN_PORTFOLIO/app/certifications/page.tsx:14:12
+Parsing ecmascript source code failed
+  12 | ],
+  13 |   // Row 2: Meta
+> 14 |   { title: "Version Control", type: "Meta", file: "Version Control.pdf" },
+     |            ^^^^^^^^^^^^^^^^^
+  15 |   { title: "JavaScript", type: "Meta", file: "Java Script.pdf" },
+  16 |   { title: "HTML & CSS", type: "Meta", file: "HTMLCSS.pdf" },
+  17 |   { title: "Intro to Front-End Development", type: "Meta", file: "Intro to Front End.pdf" },
+
+Unexpected token `string literal ("Version Control", "Version Control")`. Expected yield, an identifier, [ or {
+[00:11:44.744] Browser ERROR   ./Documents/AMAN_PORTFOLIO/app/certifications/page.tsx:14:12
+Parsing ecmascript source code failed
+  12 | ],
+  13 |   // Row 2: Meta
+> 14 |   { title: "Version Control", type: "Meta", file: "Version Control.pdf" },
+     |            ^^^^^^^^^^^^^^^^^
+  15 |   { title: "JavaScript", type: "Meta", file: "Java Script.pdf" },
+  16 |   { title: "HTML & CSS", type: "Meta", file: "HTMLCSS.pdf" },
+  17 |   { title: "Intro to Front-End Development", type: "Meta", file: "Intro to Front End.pdf" },
+
+Unexpected token `string literal ("Version Control", "Version Control")`. Expected yield, an identifier, [ or {
+[00:13:43.781] Browser ERROR   ./Documents/AMAN_PORTFOLIO/app/certifications/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 | import Link from "next/link";
+  3 | import styles from "./certifications.module.css";
+  4 |
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:13:43.782] Browser ERROR   ./Documents/AMAN_PORTFOLIO/app/certifications/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 | import Link from "next/link";
+  3 | import styles from "./certifications.module.css";
+  4 |
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:13:54.055] Server  LOG     ✓ Compiled in 16ms
+[00:13:54.156] Browser ERROR   ./Documents/AMAN_PORTFOLIO/app/certifications/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 | import Link from "next/link";
+  3 | import styles from "./certifications.module.css";
+  4 |
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:13:54.157] Browser ERROR   ./Documents/AMAN_PORTFOLIO/app/certifications/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 | import Link from "next/link";
+  3 | import styles from "./certifications.module.css";
+  4 |
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:18:49.671] Server  LOG     ✓ Compiled in 4ms
+[00:18:56.221] Server  LOG     ✓ Compiled in 7ms
+[00:19:45.240] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:56.674] Server  LOG     ✓ Compiled in 63ms
+[00:34:46.263] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:52.440] Server  LOG     ✓ Compiled in 3ms
+[00:35:03.283] Server  LOG     ✓ Compiled in 3ms
+[00:39:25.545] Server  LOG     ✓ Compiled in 9ms
+[00:41:44.610] Server  LOG     ✓ Compiled in 32ms
+[00:42:08.241] Server  LOG     ✓ Compiled in 4ms
+[00:42:24.469] Server  LOG     ✓ Compiled in 20ms
+[00:43:43.193] Server  LOG     ✓ Compiled in 16ms
+[00:44:00.480] Server  LOG     ✓ Compiled in 96ms
+[00:46:10.479] Server  LOG     ✓ Compiled in 15ms
+[00:46:38.817] Server  LOG     ✓ Compiled in 9ms
+[00:46:38.922] Browser ERROR   ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx:112:93
+Parsing ecmascript source code failed
+  110 |   return (
+  111 |     <div className={styles.pageContainer} ref={containerRef}>
+> 112 |       <div ref={particlesRef} style={{ position: 'fixed', inset: 0, pointerEvents: 'none', z-index: 1 }} />
+      |                                                                                             ^
+  113 |       
+  114 |       <Link href="/" className={styles.backButton}>
+  115 |         ← BACK
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Client Component Browser]
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Client Component SSR]
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Server Component]
+[00:46:38.922] Browser ERROR   ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx:112:93
+Parsing ecmascript source code failed
+  110 |   return (
+  111 |     <div className={styles.pageContainer} ref={containerRef}>
+> 112 |       <div ref={particlesRef} style={{ position: 'fixed', inset: 0, pointerEvents: 'none', z-index: 1 }} />
+      |                                                                                             ^
+  113 |       
+  114 |       <Link href="/" className={styles.backButton}>
+  115 |         ← BACK
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Client Component Browser]
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Client Component SSR]
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Server Component]
+[00:46:39.300] Browser ERROR   ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx:112:93
+Parsing ecmascript source code failed
+  110 |   return (
+  111 |     <div className={styles.pageContainer} ref={containerRef}>
+> 112 |       <div ref={particlesRef} style={{ position: 'fixed', inset: 0, pointerEvents: 'none', z-index: 1 }} />
+      |                                                                                             ^
+  113 |       
+  114 |       <Link href="/" className={styles.backButton}>
+  115 |         ← BACK
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Client Component Browser]
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Client Component SSR]
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Server Component]
+[00:46:39.300] Browser ERROR   ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx:112:93
+Parsing ecmascript source code failed
+  110 |   return (
+  111 |     <div className={styles.pageContainer} ref={containerRef}>
+> 112 |       <div ref={particlesRef} style={{ position: 'fixed', inset: 0, pointerEvents: 'none', z-index: 1 }} />
+      |                                                                                             ^
+  113 |       
+  114 |       <Link href="/" className={styles.backButton}>
+  115 |         ← BACK
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Client Component Browser]
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Client Component SSR]
+    ./Documents/AMAN_PORTFOLIO/app/experience/page.tsx [Server Component]
+[00:47:52.739] Server  LOG     ✓ Compiled in 5ms
+[00:49:07.801] Server  LOG     ✓ Compiled in 4ms
+[00:49:23.795] Server  LOG     ✓ Compiled in 6ms
+[00:49:30.408] Server  LOG     ✓ Compiled in 3ms
+[00:51:21.266] Server  LOG     ✓ Compiled in 4ms
+[00:51:36.536] Server  LOG     ✓ Compiled in 5ms
+[00:52:47.738] Server  LOG     ✓ Compiled in 6ms
+[00:53:03.670] Server  LOG     ✓ Compiled in 15ms
+[00:55:22.857] Server  LOG     ✓ Compiled in 28ms
+[00:56:48.895] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:30.356] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:31.986] Server  LOG     ✓ Compiled in 3ms
+[01:01:57.208] Server  LOG     ✓ Compiled in 5ms
+[01:02:07.668] Server  LOG     ✓ Compiled in 2ms
+[01:02:16.664] Server  LOG     ✓ Compiled in 21ms
+[01:02:24.632] Server  LOG     ✓ Compiled in 2ms
+[01:02:35.192] Server  LOG     ✓ Compiled in 3ms
+[01:12:27.293] Server  LOG     ✓ Compiled in 3ms
+[01:12:45.634] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:13:09.921] Server  LOG     ✓ Compiled in 11ms
+[01:17:21.179] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:17:57.830] Server  LOG     ✓ Compiled in 2ms
+[01:25:23.074] Server  LOG     ✓ Compiled in 11ms
+[01:26:10.839] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:32.219] Server  LOG     ✓ Compiled in 3ms
+[01:31:03.344] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:38:28.984] Server  LOG     ✓ Compiled in 4ms
+[01:40:32.136] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:41:38.977] Server  LOG     ✓ Compiled in 4ms
+[01:42:10.610] Server  LOG     ✓ Compiled in 4ms
+[01:47:45.853] Server  LOG     ✓ Compiled in 4ms
+[01:47:55.120] Server  LOG     ✓ Compiled in 4ms
+[01:48:02.329] Server  LOG     ✓ Compiled in 6ms

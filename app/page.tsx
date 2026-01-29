@@ -162,7 +162,7 @@ export default function Home() {
 
 
       <section className="categories-section reveal" id="projects">
-        <Link href="/edition" className="category-card">
+        <Link href="/projects" className="category-card">
           <img src="/images/projects.jpg" alt="Projects" className="category-thumb" />
           <div className="category-title">Projects</div>
         </Link>
@@ -174,13 +174,13 @@ export default function Home() {
         </Link>
 
 
-        <Link href="/visual-design" className="category-card">
-          <img src="/images/achievements.jpg" alt="Achievements" className="category-thumb" />
-          <div className="category-title">Achievements</div>
+        <Link href="/experience" className="category-card">
+          <img src="/images/achievements.jpg" alt="Experience" className="category-thumb" style={{ objectPosition: 'center 20%' }} />
+          <div className="category-title">Experience</div>
         </Link>
 
 
-        <Link href="/ventures" className="category-card">
+        <Link href="/skills" className="category-card">
           <img src="/images/skills.jpg" alt="Skills" className="category-thumb" />
           <div className="category-title">Skills</div>
         </Link>

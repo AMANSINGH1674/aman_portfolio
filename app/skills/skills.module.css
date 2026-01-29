@@ -1,0 +1,289 @@
+.pageContainer {
+    min-height: 100vh;
+    background-color: #020308;
+    color: #e0e0e0;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    padding: 6rem 2rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Floating Ambient Glows */
+.pageContainer::before,
+.pageContainer::after {
+    content: '';
+    position: fixed;
+    width: 60vw;
+    height: 60vw;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.1;
+}
+
+.pageContainer::before {
+    top: -20%;
+    left: -10%;
+    background: radial-gradient(circle, #4facfe 0%, transparent 70%);
+}
+
+.pageContainer::after {
+    bottom: -20%;
+    right: -10%;
+    background: radial-gradient(circle, #00f2fe 0%, transparent 70%);
+}
+
+.backButton {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    z-index: 100;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backButton:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    letter-spacing: 4px;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto 6rem;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.title {
+    font-size: clamp(3rem, 10vw, 7rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+    background: linear-gradient(to bottom, #fff 30%, rgba(255, 255, 255, 0.2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto 8rem;
+    position: relative;
+    z-index: 10;
+}
+
+.sectionTitle {
+    font-size: 0.9rem;
+    color: #4facfe;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.sectionTitle::after {
+    content: '';
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, rgba(79, 172, 254, 0.3), transparent);
+}
+
+.skillGroup {
+    margin-bottom: 6rem;
+}
+
+.categoryTitle {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.categoryTitle::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: #4facfe;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 3rem 2rem;
+}
+
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.4s ease;
+    cursor: default;
+}
+
+.skillCard:hover {
+    transform: translateY(-10px);
+}
+
+.iconWrapper {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1.5rem;
+}
+
+/* The Holographic Orb */
+.iconBox {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 
+        inset 0 0 20px rgba(79, 172, 254, 0.1),
+        0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Outer Rotating Ring */
+.orbRing {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 1px dashed rgba(79, 172, 254, 0.3);
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+    z-index: 1;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Bottom Shadow/Reflections */
+.orbReflect {
+    position: absolute;
+    bottom: -15px;
+    width: 60px;
+    height: 10px;
+    background: radial-gradient(ellipse at center, rgba(79, 172, 254, 0.2), transparent 70%);
+    filter: blur(5px);
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.iconBox img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 3;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+}
+
+.skillCard:hover .iconBox img {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 0 15px rgba(79, 172, 254, 0.5));
+}
+
+.iconPlaceholder {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.skillName {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #8892b0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.skillCard:hover .skillName {
+    color: #fff;
+}
+
+/* Scanning Light Effect */
+.iconBox::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(
+        45deg,
+        transparent 45%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 55%
+    );
+    animation: scan 4s infinite;
+    pointer-events: none;
+}
+
+@keyframes scan {
+    0% { transform: translate(-30%, -30%); }
+    100% { transform: translate(30%, 30%); }
+}
+
+@media (max-width: 768px) {
+    .pageContainer {
+        padding: 4rem 1.25rem;
+    }
+    .backButton {
+        top: 1rem;
+        left: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .title { 
+        font-size: clamp(2.5rem, 8vw, 3.5rem); 
+        margin-top: 2rem;
+    }
+    .grid { 
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); 
+        gap: 2rem 1rem; 
+    }
+    .iconWrapper { width: 70px; height: 70px; }
+    .iconBox img { width: 35px; height: 35px; }
+    .skillName { font-size: 0.6rem; }
+    .sectionTitle {
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+    }
+}
