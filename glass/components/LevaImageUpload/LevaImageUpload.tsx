@@ -83,8 +83,8 @@ function GreenOrBlue() {
             }
             stateRef.current.imageObjURL = URL.createObjectURL(file);
             e.target.value = '';
-            onUpdate(stateRef.current.imageObjURL);
-            onChange(stateRef.current.imageObjURL);
+            onUpdate({ file: stateRef.current.imageObjURL });
+            onChange({ file: stateRef.current.imageObjURL });
           }}
         ></input>
         <div
