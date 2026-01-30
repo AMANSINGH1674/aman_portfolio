@@ -70,9 +70,9 @@ export default function Home() {
     }
 
     // Footer animation - Simple fade in on scroll
-    const footerNames = document.querySelectorAll(".footer-name");
+    const animElements = document.querySelectorAll(".footer-name, .taste-title, .wishlist-title");
     
-    footerNames.forEach((el) => {
+    animElements.forEach((el) => {
       gsap.from(el, {
         scrollTrigger: {
           trigger: el,
@@ -189,7 +189,7 @@ export default function Home() {
       <LiquidGlassButton />
       
       <div id="movie-taste" className="portfolio-carousel" style={{ marginTop: "6rem" }}>
-        <div className="footer-name" style={{ textAlign: "center", marginBottom: "4rem", fontSize: "4rem", width: "100%", color: "#888" }}>
+        <div className="taste-title">
           MOVIE TASTE
         </div>
         <div className="carousel-container" style={{ animationDuration: "30s" }}>
@@ -240,7 +240,7 @@ export default function Home() {
       </div>
 
       <div className="portfolio-carousel" style={{ marginTop: "6rem" }}>
-        <div className="footer-name" style={{ textAlign: "center", marginBottom: "4rem", fontSize: "4rem", width: "100%", color: "#888" }}>
+        <div className="taste-title">
           MUSIC TASTE
         </div>
         <div className="carousel-container">
@@ -291,7 +291,7 @@ export default function Home() {
       </div>
 
       <div className="wishlist-section" style={{ marginTop: "8rem", marginBottom: "2rem", position: "relative", zIndex: 2, background: "#000" }}>
-        <div className="wishlist-title" style={{ textAlign: "center", marginBottom: "4rem" }}>
+        <div className="wishlist-title">
           <div className="title-top">THINGS I WANNA DO</div>
           <div className="title-bottom">BEFORE I DIE</div>
         </div>
