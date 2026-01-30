@@ -142,7 +142,7 @@ body {
     left: -10%;
     height: 60vh;
     background: #000;
-    margin-top: -48vh; /* Pushed down slightly */
+    margin-top: -30vh; /* Moved further down to hide behind wishlist */
     margin-bottom: -5vh;
     border-radius: 0 0 50% 50%;
     z-index: 1; /* Sit behind the wishlist-section (z-index: 2) */
@@ -1120,9 +1120,7 @@ nav {
 
 .wishlist-section {
     width: 100%;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
     padding: 0 2rem;
     overflow: hidden;
 }
