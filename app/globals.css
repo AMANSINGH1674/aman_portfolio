@@ -142,7 +142,7 @@ body {
     left: -10%;
     height: 60vh;
     background: #000;
-    margin-top: -30vh; /* Moved further down to hide behind wishlist */
+    margin-top: -38vh; /* Brought up slightly */
     margin-bottom: -5vh;
     border-radius: 0 0 50% 50%;
     z-index: 1; /* Sit behind the wishlist-section (z-index: 2) */

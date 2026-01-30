@@ -295,7 +295,7 @@ export default function Home() {
           <div className="title-top">THINGS I WANNA DO</div>
           <div className="title-bottom">BEFORE I DIE</div>
         </div>
-        <div className="wishlist-container" style={{ maxWidth: "700px", margin: "0 auto", padding: "0 2rem" }}>
+        <div className="wishlist-container" style={{ width: "fit-content", margin: "0 auto", padding: "0 2rem" }}>
           <div className="wishlist-item">
             <input type="checkbox" className="wishlist-checkbox" checked={false} readOnly />
             <span className="wishlist-text">Constantly improve myself</span>
