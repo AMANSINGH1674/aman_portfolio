@@ -110,7 +110,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} style={{ overflowX: "hidden", width: "100%" }}>
       <section className="hero-section reveal" ref={heroRef}>
         <nav>
           <div className="logo">

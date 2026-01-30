@@ -119,9 +119,8 @@ body {
 .hero-eclipse-arc {
     position: absolute;
     bottom: -40vh; /* Moved further down */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120vw; /* Reduced width for more pronounced curve */
+    left: -10%;
+    width: 120%; /* Using % instead of vw for stability */
     height: 60vh;
     border-radius: 50% 50% 0 0;
     background: #000;
@@ -139,7 +138,8 @@ body {
 /* --- FOOTER ECLIPSE ARC (INVERTED) --- */
 .footer-eclipse-arc {
     position: relative;
-    width: 100%;
+    width: 120%;
+    left: -10%;
     height: 60vh;
     background: #000;
     margin-top: -48vh; /* Pushed down slightly */
@@ -1105,23 +1105,17 @@ nav {
     margin: 0;
 }
 
-.wishlist-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    margin-bottom: 4rem;
-}
-
 .taste-title {
     font-family: 'HelveticaLocal', Helvetica, Arial, sans-serif;
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 8vw, 4rem);
     font-weight: 700;
     color: #888;
     text-align: center;
     margin-bottom: 4rem;
     width: 100%;
+    padding: 0 1rem;
     letter-spacing: -0.02em;
+    word-wrap: break-word;
 }
 
 .wishlist-section {
@@ -1130,27 +1124,39 @@ nav {
     margin-left: auto;
     margin-right: auto;
     padding: 0 2rem;
+    overflow: hidden;
+}
+
+.wishlist-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 4rem;
+    width: 100%;
 }
 
 .title-top {
     font-family: 'HelveticaLocal', Helvetica, Arial, sans-serif;
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 8vw, 4rem);
     font-weight: 700;
     color: #888;
     letter-spacing: -0.02em;
     line-height: 1;
+    text-align: center;
 }
 
 .title-bottom {
     font-family: 'HelveticaLocal', Helvetica, Arial, sans-serif;
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 8vw, 4rem);
     font-weight: 700;
     background: linear-gradient(to right, #ff3399, #ff9933);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 0;
     padding-bottom: 0.5rem;
-    line-height: 1;
+    line-height: 1.1;
+    text-align: center;
 }
 
 .wishlist-item {
